@@ -5,6 +5,12 @@ html,body {
   margin: 0px;
   padding: 0px;
 }
+h1{
+  font-size: 1.17em;
+}
+h2{
+  font-size: 1em;
+}
 
 /* The navigation bar */
 .navbar {
