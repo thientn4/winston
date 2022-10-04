@@ -116,10 +116,10 @@ for(let i=0; i<projects.length; i++){
 
     cur_tr=document.createElement("tr")
     cur_td=document.createElement("td")
-    let cur_h4=document.createElement("h4")
-    cur_h4.appendChild(document.createTextNode(project.name))
-    cur_h4.className="project_link"
-    cur_td.appendChild(cur_h4)
+    let cur_h2=document.createElement("h2")
+    cur_h2.appendChild(document.createTextNode(project.name))
+    cur_h2.className="project_link"
+    cur_td.appendChild(cur_h2)
     cur_tr.appendChild(cur_td)
     project_names.appendChild(cur_tr)
 }
@@ -177,10 +177,10 @@ for(let i=0; i<employments.length; i++){
 
     cur_tr=document.createElement("tr")
     cur_td=document.createElement("td")
-    let cur_h4=document.createElement("h4")
-    cur_h4.appendChild(document.createTextNode(employment.name))
-    cur_h4.className="exp_link"
-    cur_td.appendChild(cur_h4)
+    let cur_h2=document.createElement("h2")
+    cur_h2.appendChild(document.createTextNode(employment.name))
+    cur_h2.className="exp_link"
+    cur_td.appendChild(cur_h2)
     cur_tr.appendChild(cur_td)
     org_names.appendChild(cur_tr)
 }
@@ -221,10 +221,10 @@ for(let i=0; i<skills.length; i++){
 
     let cur_td=document.createElement("td")
     cur_td.className="skill_type"
-    let cur_h4=document.createElement("h4")
-    cur_h4.className="skill_link"
-    cur_h4.appendChild(document.createTextNode(skill.type))
-    cur_td.appendChild(cur_h4)
+    let cur_h2=document.createElement("h2")
+    cur_h2.className="skill_link"
+    cur_h2.appendChild(document.createTextNode(skill.type))
+    cur_td.appendChild(cur_h2)
     skill_types.appendChild(cur_td)
 }
 
