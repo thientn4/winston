@@ -243,6 +243,29 @@ table{
   position:relative;
   max-width:375px;
 }
+
+.skill_table_wrapper{
+  max-width: 500px;
+}
+#skill_table{
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.skill_type{
+  border-left:indigo 2px solid;
+  border-right:indigo 2px solid;
+  border-bottom:indigo 2px solid;
+  background-color:rgb(242, 234, 234);
+}
+.skill_detail{
+  border-left:indigo 2px solid;
+  border-right:indigo 2px solid;
+  border-bottom:indigo 2px solid;
+  background-color:white;
+}
+
 td{
   padding-left:5px;
   padding-right:5px;

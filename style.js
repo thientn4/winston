@@ -56,6 +56,24 @@ const employments=[
         ]
     }
 ]
+const skills=[
+    {
+        "type":"Frontend",
+        "technologies":"HTML CSS React VueJS"
+    },
+    {
+        "type":"Backend",
+        "technologies":"NodeJS ExpressJS Java-Spring"
+    },
+    {
+        "type":"Database",
+        "technologies":"PostgreSQL MySQL MongoDB Neo4J Cassandra"
+    },
+    {
+        "type":"Tools",
+        "technologies":"Git Github BitBucket RestAPI Heroku Jira Postman"
+    }
+]
 
 let cur_drop=false;
 
@@ -125,7 +143,7 @@ project_links.forEach(function(project_link, index) {
             if (other_project_link!==project_link)
                 other_project_link.style.color="indigo"
             else
-                other_project_link.style.color="rgb(0,153,76)"
+                other_project_link.style.color="rgb(15, 82, 0)"
 
         });
 
@@ -183,7 +201,7 @@ exp_links.forEach(function(exp_link, index) {
             if (other_exp_link!==exp_link)
                 other_exp_link.style.color="indigo"
             else
-                other_exp_link.style.color="rgb(0,153,76)"
+                other_exp_link.style.color="rgb(15, 82, 0)"
 
         });
 
@@ -192,3 +210,35 @@ exp_links.forEach(function(exp_link, index) {
     });
 });
 exp_links[0].click();
+
+const skill_types=document.querySelector('#skill_types')
+for(let i=0; i<skills.length; i++){
+    var skill=skills[i]
+
+    let cur_td=document.createElement("td")
+    cur_td.className="skill_type"
+    let cur_h4=document.createElement("h4")
+    cur_h4.className="skill_link"
+    cur_h4.appendChild(document.createTextNode(skill.type))
+    cur_td.appendChild(cur_h4)
+    skill_types.appendChild(cur_td)
+}
+
+const skill_detail_txt=document.querySelector('#skill_detail_txt');
+const skill_links = document.querySelectorAll(".skill_link");
+skill_links.forEach(function(skill_link, index) {
+    skill_link.addEventListener('click', function() {
+        skill_detail_txt.innerHTML=skills[index].technologies;
+        skill_links.forEach(function(other_skill_link, index) {
+            if (other_skill_link!==skill_link)
+                other_skill_link.style.color="indigo"
+            else
+                other_skill_link.style.color="rgb(15, 82, 0)"
+
+        });
+
+
+
+    });
+});
+skill_links[0].click();
