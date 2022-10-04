@@ -48,7 +48,7 @@ h2{
 
 /* zoom on mouse-over */
 .nav_link:hover {
-  color:rgb(0,153,76);
+  color:rgb(15, 82, 0);
   transition: 0.1s ease;
 }
 .main_link {
@@ -180,7 +180,7 @@ h2{
     transform: scale(1.1);
   }
   .main_link:hover{
-    color:rgb(0,153,76);
+    color:rgb(15, 82, 0);
     transition: 0.1s ease;
   }
   .drop_bar{
