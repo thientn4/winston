@@ -5,6 +5,7 @@ const body=document.querySelector('body')
 const drop_projects=document.querySelector('#drop_projects')
 const drop_about=document.querySelector('#drop_about')
 const drop_exp=document.querySelector('#drop_exp')
+const drop_skills=document.querySelector('#drop_skills')
 const sub_body=document.querySelector('.body')
 const projects=[
     {
@@ -71,7 +72,7 @@ const skills=[
     },
     {
         "type":"Tools",
-        "technologies":"Git Github BitBucket RestAPI Heroku Jira Postman"
+        "technologies":"Git GitHub BitBucket RestAPI Heroku Jira Postman"
     }
 ]
 
@@ -92,6 +93,9 @@ drop_about.addEventListener('click',function(){
     if(cur_drop)burger.click()
 })
 drop_exp.addEventListener('click',function(){
+    if(cur_drop)burger.click()
+})
+drop_skills.addEventListener('click',function(){
     if(cur_drop)burger.click()
 })
 sub_body.addEventListener('click',function(){
