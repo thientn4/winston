@@ -216,6 +216,7 @@ exp_links.forEach(function(exp_link, index) {
 exp_links[0].click();
 
 const skill_types=document.querySelector('#skill_types')
+skill_types.replaceChildren();
 for(let i=0; i<skills.length; i++){
     var skill=skills[i]
 
