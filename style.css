@@ -25,7 +25,7 @@ h2{
   position: fixed;
   top: 0;
   width:100%;
-  background-color:rgb(242, 234, 234);
+  background-color:rgb(255, 255, 236);
   font-size: 1.3em;
   border-bottom: indigo 2px solid;
   height:40px;
@@ -171,7 +171,7 @@ h2{
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: rgb(242, 234, 234);
+    background-color: rgb(255, 255, 236);
     border-top: indigo 2px solid;
     padding-top:15px;
   }
@@ -270,7 +270,7 @@ table{
   border-left:indigo 2px solid;
   border-right:indigo 2px solid;
   border-bottom:indigo 2px solid;
-  background-color:rgb(242, 234, 234);
+  background-color:rgb(255, 255, 236);
 }
 .skill_detail{
   border-left:indigo 2px solid;
@@ -289,7 +289,7 @@ tr:nth-child(even){
   background-color: indigo;
 }
 tr:nth-child(odd){
-  background-color: rgb(242, 234, 234);
+  background-color: rgb(255, 255, 236);
 }
 
 .proj_url{
