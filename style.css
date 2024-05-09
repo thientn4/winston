@@ -245,6 +245,7 @@ table{
   display:flex;
   flex-direction: row;
   max-width:500px;
+  min-height:370px;
   border-top: indigo 2px solid;
   border-bottom: indigo 2px solid;
 }
@@ -277,6 +278,10 @@ table{
   border-right:indigo 2px solid;
   border-bottom:indigo 2px solid;
   background-color:white;
+}
+
+#skill_detail_txt{
+  line-height: 40px;
 }
 
 td{

@@ -9,70 +9,81 @@ const drop_skills=document.querySelector('#drop_skills')
 const sub_body=document.querySelector('.body')
 const projects=[
     {
-        "name":"Mock Interviewer",
-        "about":"A web application for student to practice behavioral interview. Students can login with a Google account and their question list will be stored in the Database. Each question will be read out loud by Web Speech API in an interview session.",
-        "skills":"HTML CSS JavaScript Google OAuth NodeJS Heroku PostgreSQL",
-        "git_url":"https://github.com/thientn4/iMockServer",
-        "demo_url":"https://imocker.herokuapp.com/"
+        "name":"Drivers Tracking System",
+        "about":"A system for my employer (JM-Eagle) to track their truck drivers and delivery progress. It consists of a mobile app for drivers and a web app with interactive map view",
+        "git_url":"https://docs.google.com/document/d/1l5KPTR-ybhaS_aAdGirfmXZ-kV4M1rJSL-TwLJ62dTA/edit"
     },
     {
-        "name":"Movie Web App",
-        "about":"An e-commerce web app where user can search for movies, have their own account and shopping cart, make purchases with Stripe API. Web communication is secured using JSON Web Token",
-        "skills":"Java Spring MySQL React Rest-API Postman",
-        "git_url":"https://github.com/thientn4/movie_website"
+        "name":"UnBlock",
+        "about":"UnBlock is a web application for teamwork discussion. Team members can post questions or comment to questions to get team's issues resolved ASAP",
+        "git_url":"https://docs.google.com/document/d/1pcJwgOwITQdarScoO7_UDVZ387enB9Rl_2EPkLzMeI0"
+    },
+    {
+        "name":"MeetLink",
+        "about":"MeetLink is a web app for teams to pick the best meeting date and time where majority of team members can attend",
+        "git_url":"https://github.com/thientn4/MeetLink"
     },
     {
         "name":"Tic Tac Toe AI",
-        "about":"A 3x3 Tic Tac Toe game with an unbeatable AI built from recursive AI-decision-tree algorithm. Algorithm is applied to calculate winning and losing possibilities of leftover Tic Tac Toe options for AI to choose in each turn.",
-        "skills":"HTML CSS JavaScript Algorithm",
+        "about":"A 3x3 Tic Tac Toe game with an unbeatable AI built from recursive AI-decision-tree algorithm. Algorithm is applied to calculate winning and losing possibilities of leftover Tic Tac Toe options for AI to choose in each turn",
         "git_url":"https://github.com/thientn4/Tic-Tac-Toe",
         "demo_url":"https://thientn4.github.io/Tic-Tac-Toe/"
     },
     {
         "name":"Sort Visualizer",
         "about":"A static website to visualize how 6 different sort algorithms work (Selection Sort, Bubble Sort, Insertion Sort, Quick Sort, Merge Sort, Heap Sort)",
-        "skills":"HTML CSS JavaScript Algorithm",
         "git_url":"https://github.com/thientn4/sort_visualizer",
         "demo_url":"https://thientn4.github.io/sort_visualizer/"
     }
 ]
 const employments=[
     {
+        "name":"JM-Eagle",
+        "position":"Software Engineer",
+        "time":"Mar 2023 - Present",
+        "roles":[
+            "Plan, design, implement and maintain JmEagle's truck driver tracking software system in a one-man team",
+            "Utilize ReactJS & React Native for web & mobile frontend with ExpressJS as backend and mySQL for database",
+            "Orchestrate different RestAPIs & AWS services to work together and host the system on Cloud",
+        ]
+    },
+    {
+        "name":"Power Settlements",
+        "position":"Software Engineer",
+        "time":"Oct 2021 - Dec 2022",
+        "roles":[
+            "Implement, troubleshoot SQL queries & procedures in the server's database",
+            "Contribute in implementing frontend data visualization with Vue JS",
+            "Implement .NET Window interface & microservices to pull and reformat data into user's custom templates",
+            "Utilized Atlassian to track and report of progress of parallel tasks during Agile \"stand-up\" meetings"
+        ]
+    },
+    {
         "name":"Commit The Change",
         "position":"Volunteer Developer",
         "time":"Oct 2021 - Jun 2022",
         "roles":[
             "Participate with 9 other students to build a bathroom map web application for UCI",
-            "Work in a team of 4 students to implement a back-end microservices using ExpressJS, MongoDB, Postman",
-            "Take part in implementing frontend interface with ReactJS"
-        ]
-    },
-    {
-        "name":"Power Settlements",
-        "position":"Software Engineer Intern",
-        "time":"Oct 2021 - Present",
-        "roles":[
-            "Troubleshooting for the calculations of SQL procedures in the database",
-            "Contribute in implementing frontend data visualization with Vue JS"
+            "Work in a team of 4 students to implement a back-end server with ExpressJS, MongoDB"
         ]
     }
 ]
 const skills=[
     {
         "type":"Frontend",
-        "technologies":"HTML CSS React VueJS"
+        "technologies":"HTML &nbsp CSS &nbsp JavaScript &nbsp ReactJS &nbsp ReactNative &nbsp VueJS &nbsp Angular &nbsp Ionic"
     },
     {
         "type":"Backend",
-        "technologies":"NodeJS ExpressJS Java-Spring"
+        "technologies":"Python &nbsp JavaScript &nbsp Java &nbsp C# &nbsp C++ &nbsp C &nbsp NodeJS &nbsp ExpressJS &nbsp SpringBoot &nbsp ASP.NET"
     },
     {
         "type":"Database",
-        "technologies":"PostgreSQL MySQL MongoDB Neo4J Cassandra"
+        "technologies":"PostgreSQL &nbsp MySQL &nbsp SQLserver &nbsp MongoDB &nbsp Neo4J &nbsp Cassandra"
     },
     {
         "type":"Tools",
-        "technologies":"Git GitHub BitBucket RestAPI Heroku Jira Postman"
+        "technologies":"WindowsIIS &nbsp Git &nbsp Github &nbsp AWS &nbsp Postman &nbsp BitBucket &nbsp Atlassian &nbsp Jira"
     }
 ]
 
@@ -125,14 +136,12 @@ for(let i=0; i<projects.length; i++){
 }
 
 const proj_detail=document.querySelector('#proj_detail')
-const proj_skills=document.querySelector('#proj_skills')
 const project_links = document.querySelectorAll(".project_link");
 const git_url=document.querySelector('#git_url')
 const demo_url=document.querySelector('#demo_url')
 project_links.forEach(function(project_link, index) {
     project_link.addEventListener('click', function() {
         proj_detail.innerHTML=projects[index].about
-        proj_skills.innerHTML=projects[index].skills
         git_url.onclick = function () {
             window.open(projects[index].git_url, '_blank');
         };
