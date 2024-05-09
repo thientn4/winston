@@ -245,7 +245,7 @@ table{
   display:flex;
   flex-direction: row;
   max-width:500px;
-  min-height:450px;
+  min-height:370px;
   border-top: indigo 2px solid;
   border-bottom: indigo 2px solid;
 }
@@ -289,11 +289,18 @@ td{
   padding-right:5px;
 }
 
-tr:nth-child(even){
+/* tr:nth-child(even){
   height:2px;
   background-color: indigo;
 }
 tr:nth-child(odd){
+  background-color: rgb(255, 255, 236);
+} */
+.proj_emp_divider{
+  background-color: rgb(255, 255, 236);
+  border-bottom:indigo 2px solid;
+}
+.proj_emp_name{
   background-color: rgb(255, 255, 236);
 }
 

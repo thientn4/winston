@@ -54,8 +54,7 @@ const employments=[
         "roles":[
             "Implement, troubleshoot SQL queries & procedures in the server's database",
             "Contribute in implementing frontend data visualization with Vue JS",
-            "Implement .NET Window interface & microservices to pull and reformat data into user's custom templates",
-            "Utilized Atlassian to track and report of progress of parallel tasks during Agile \"stand-up\" meetings"
+            "Implement .NET Window interface & microservices to pull and reformat data into user's custom templates"
         ]
     },
     {
@@ -121,12 +120,14 @@ for(let i=0; i<projects.length; i++){
     if(i!==0){
         let cur_tr=document.createElement("tr")
         let cur_td=document.createElement("td")
+        cur_td.className="proj_emp_divider"
         cur_tr.appendChild(cur_td)
         project_names.appendChild(cur_tr)
     }
 
     cur_tr=document.createElement("tr")
     cur_td=document.createElement("td")
+    cur_td.className="proj_emp_name"
     let cur_h2=document.createElement("h2")
     cur_h2.appendChild(document.createTextNode(project.name))
     cur_h2.className="project_link"
@@ -180,12 +181,14 @@ for(let i=0; i<employments.length; i++){
     if(i!==0){
         let cur_tr=document.createElement("tr")
         let cur_td=document.createElement("td")
+        cur_td.className="proj_emp_divider"
         cur_tr.appendChild(cur_td)
         org_names.appendChild(cur_tr)
     }
 
     cur_tr=document.createElement("tr")
     cur_td=document.createElement("td")
+    cur_td.className="proj_emp_name"
     let cur_h2=document.createElement("h2")
     cur_h2.appendChild(document.createTextNode(employment.name))
     cur_h2.className="exp_link"
