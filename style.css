@@ -289,13 +289,6 @@ td{
   padding-right:5px;
 }
 
-/* tr:nth-child(even){
-  height:2px;
-  background-color: indigo;
-}
-tr:nth-child(odd){
-  background-color: rgb(255, 255, 236);
-} */
 .proj_emp_divider{
   background-color: rgb(255, 255, 236);
   border-bottom:indigo 2px solid;
