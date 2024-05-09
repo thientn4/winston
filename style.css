@@ -245,7 +245,7 @@ table{
   display:flex;
   flex-direction: row;
   max-width:500px;
-  min-height:370px;
+  min-height:450px;
   border-top: indigo 2px solid;
   border-bottom: indigo 2px solid;
 }
