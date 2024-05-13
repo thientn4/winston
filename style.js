@@ -75,19 +75,19 @@ const employments=[
 const skills=[
     {
         "type":"Frontend",
-        "technologies":"HTML &nbsp CSS &nbsp JavaScript &nbsp ReactJS &nbsp ReactNative &nbsp VueJS &nbsp Angular &nbsp Ionic"
+        "technologies":["HTML","CSS","JavaScript","ReactJS","ReactNative","VueJS","Angular","Ionic"]
     },
     {
         "type":"Backend",
-        "technologies":"Python &nbsp JavaScript &nbsp Java &nbsp C# &nbsp C++ &nbsp C &nbsp NodeJS &nbsp ExpressJS &nbsp SpringBoot &nbsp ASP.NET"
+        "technologies":["Python","JavaScript","Java","C#","C++","C","NodeJS","ExpressJS","SpringBoot","ASP.NET"]
     },
     {
         "type":"Database",
-        "technologies":"PostgreSQL &nbsp MySQL &nbsp SQLserver &nbsp MongoDB &nbsp Neo4J &nbsp Cassandra"
+        "technologies":["PostgreSQL","MySQL","SQLserver","MongoDB","Neo4J","Cassandra"]
     },
     {
         "type":"Tools",
-        "technologies":"WindowsIIS &nbsp Git &nbsp Github &nbsp AWS &nbsp Postman &nbsp BitBucket &nbsp Atlassian &nbsp Jira"
+        "technologies":["WindowsIIS","Git","Github","AWS","Postman","BitBucket","Atlassian","Jira"]
     }
 ]
 
@@ -236,7 +236,7 @@ const skill_detail_txt=document.querySelector('#skill_detail_txt');
 const skill_links = document.querySelectorAll(".skill_link");
 skill_links.forEach(function(skill_link, index) {
     skill_link.addEventListener('click', function() {
-        skill_detail_txt.innerHTML=skills[index].technologies;
+        skill_detail_txt.innerHTML=skills[index].technologies.join(' &nbsp; ');
         skill_links.forEach(function(other_skill_link, index) {
             if (other_skill_link!==skill_link)
                 other_skill_link.style.color="indigo"
@@ -244,9 +244,6 @@ skill_links.forEach(function(skill_link, index) {
                 other_skill_link.style.color="rgb(15, 82, 0)"
 
         });
-
-
-
     });
 });
 skill_links[0].click();
