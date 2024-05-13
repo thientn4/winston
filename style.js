@@ -11,29 +11,34 @@ const projects=[
     {
         "name":"Drivers Tracking System",
         "about":"A system for my employer (JM-Eagle) to track their truck drivers and delivery progress. It consists of a mobile app for drivers and a web app with interactive map view",
-        "git_url":"https://docs.google.com/document/d/1l5KPTR-ybhaS_aAdGirfmXZ-kV4M1rJSL-TwLJ62dTA/edit"
+        "git_url":"https://docs.google.com/document/d/1l5KPTR-ybhaS_aAdGirfmXZ-kV4M1rJSL-TwLJ62dTA/edit",
+        "img_url":"jmFleet.png"
     },
     {
         "name":"UnBlock",
         "about":"UnBlock is a web application for teamwork discussion. Team members can post questions or comment to questions to get team's issues resolved ASAP",
-        "git_url":"https://docs.google.com/document/d/1pcJwgOwITQdarScoO7_UDVZ387enB9Rl_2EPkLzMeI0"
+        "git_url":"https://docs.google.com/document/d/1pcJwgOwITQdarScoO7_UDVZ387enB9Rl_2EPkLzMeI0",
+        "img_url":"unBlock.png"
     },
     {
         "name":"MeetLink",
         "about":"MeetLink is a web app for teams to pick the best meeting date and time where majority of team members can attend",
-        "git_url":"https://github.com/thientn4/MeetLink"
+        "git_url":"https://github.com/thientn4/MeetLink",
+        "img_url":"meetLink.png"
     },
     {
         "name":"Tic Tac Toe AI",
         "about":"A 3x3 Tic Tac Toe game with an unbeatable AI built from recursive AI-decision-tree algorithm. Algorithm is applied to calculate winning and losing possibilities of leftover Tic Tac Toe options for AI to choose in each turn",
         "git_url":"https://github.com/thientn4/Tic-Tac-Toe",
-        "demo_url":"https://thientn4.github.io/Tic-Tac-Toe/"
+        "demo_url":"https://thientn4.github.io/Tic-Tac-Toe/",
+        "img_url":"ticTacToe.png"
     },
     {
         "name":"Sort Visualizer",
         "about":"A static website to visualize how 6 different sort algorithms work (Selection Sort, Bubble Sort, Insertion Sort, Quick Sort, Merge Sort, Heap Sort)",
         "git_url":"https://github.com/thientn4/sort_visualizer",
-        "demo_url":"https://thientn4.github.io/sort_visualizer/"
+        "demo_url":"https://thientn4.github.io/sort_visualizer/",
+        "img_url":"sortVisualizer.png"
     }
 ]
 const employments=[
@@ -137,12 +142,14 @@ for(let i=0; i<projects.length; i++){
 }
 
 const proj_detail=document.querySelector('#proj_detail')
+const proj_img=document.querySelector('#proj_img')
 const project_links = document.querySelectorAll(".project_link");
 const git_url=document.querySelector('#git_url')
 const demo_url=document.querySelector('#demo_url')
 project_links.forEach(function(project_link, index) {
     project_link.addEventListener('click', function() {
         proj_detail.innerHTML=projects[index].about
+        proj_img.src="projScreenshot/"+projects[index].img_url
         git_url.onclick = function () {
             window.open(projects[index].git_url, '_blank');
         };

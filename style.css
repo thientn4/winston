@@ -178,6 +178,9 @@ h2{
   .contact_decor_wrapper{
     display:none;
   }
+  #proj_img{
+    display:none;
+  }
 }
 @media (min-width:900px){
   .burger{
@@ -219,6 +222,9 @@ h2{
     margin-left:70px;
     scroll-behavior: smooth;
   }
+  #proj_img{
+    width: 100%;
+  }
 }
 
 
@@ -245,14 +251,15 @@ table{
   display:flex;
   flex-direction: row;
   max-width:500px;
-  min-height:370px;
+  min-height:450px;
   border-top: indigo 2px solid;
   border-bottom: indigo 2px solid;
 }
 
 .exp_detail{
   border-left: indigo 2px solid;
-  padding-left: 10px;
+  padding-left: 20px;
+  padding-right:10px;
   text-align:left;
   position:relative;
   max-width:375px;
