@@ -296,11 +296,11 @@ td{
   padding-right:5px;
 }
 
-.proj_emp_divider{
-  background-color: rgb(255, 255, 236);
-  border-bottom:indigo 2px solid;
-}
 .proj_emp_name{
+  background-color: rgb(255, 255, 236);
+  border-top:indigo 2px solid;
+}
+.proj_emp_name_top{
   background-color: rgb(255, 255, 236);
 }
 

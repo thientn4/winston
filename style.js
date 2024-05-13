@@ -121,18 +121,10 @@ sub_body.addEventListener('click',function(){
 const project_names=document.querySelector('#project_names')
 for(let i=0; i<projects.length; i++){
     var project=projects[i]
-    
-    if(i!==0){
-        let cur_tr=document.createElement("tr")
-        let cur_td=document.createElement("td")
-        cur_td.className="proj_emp_divider"
-        cur_tr.appendChild(cur_td)
-        project_names.appendChild(cur_tr)
-    }
 
     cur_tr=document.createElement("tr")
     cur_td=document.createElement("td")
-    cur_td.className="proj_emp_name"
+    cur_td.className=(i!==0)?"proj_emp_name":"proj_emp_name_top"
     let cur_h2=document.createElement("h2")
     cur_h2.appendChild(document.createTextNode(project.name))
     cur_h2.className="project_link"
@@ -184,18 +176,10 @@ project_links[0].click();
 const org_names=document.querySelector('#org_names')
 for(let i=0; i<employments.length; i++){
     var employment=employments[i]
-    
-    if(i!==0){
-        let cur_tr=document.createElement("tr")
-        let cur_td=document.createElement("td")
-        cur_td.className="proj_emp_divider"
-        cur_tr.appendChild(cur_td)
-        org_names.appendChild(cur_tr)
-    }
 
     cur_tr=document.createElement("tr")
     cur_td=document.createElement("td")
-    cur_td.className="proj_emp_name"
+    cur_td.className=(i!==0)?"proj_emp_name":"proj_emp_name_top"
     let cur_h2=document.createElement("h2")
     cur_h2.appendChild(document.createTextNode(employment.name))
     cur_h2.className="exp_link"
