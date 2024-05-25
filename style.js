@@ -87,7 +87,7 @@ const skills=[
     },
     {
         "type":"Tools",
-        "technologies":["WindowsIIS","Git","Github","AWS","Postman","Expo","BitBucket","Atlassian","Jira"]
+        "technologies":["WindowsIIS","Git","Github","AWS","Expo","Postman","BitBucket","Atlassian","Jira"]
     }
 ]
 
