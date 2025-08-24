@@ -130,7 +130,7 @@ function App() {
             <img alt="email" style={styles.button} src={require("./image/buttons/email.png")} onClick={()=>window.location.href="mailto:ntmthien2001@gmail.com"}/>
             <img alt="github" style={styles.button} src={require("./image/buttons/github.png")} onClick={()=>window.open('https://github.com/thientn4', '_blank')}/>
             <img alt="linkedin" style={styles.button} src={require("./image/buttons/linkedin.png")} onClick={()=>window.open('https://www.linkedin.com/in/thiennguyen2001/', '_blank')}/>
-            <img alt="resume" style={styles.button} src={require("./image/buttons/resume.png")} onClick={()=>window.open('https://docs.google.com/document/d/1QMwdUgDgUzbeAUTa0FqKTwcwAzP3RTydyg0EzU-hzOA/edit?usp=sharing', '_blank')}/>
+            <img alt="resume" style={styles.button} src={require("./image/buttons/resume.png")} onClick={()=>window.open('https://drive.google.com/file/d/16x2_aJ9qNKQhbJ5NNcopY1Mt8IblukNy/view?usp=sharing', '_blank')}/>
           </div>
           <div style={{flex:1}}/>
         </div>

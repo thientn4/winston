@@ -70,7 +70,7 @@ const data={
         //     "link":null
         // },
         {
-            "name":"JMEagle",
+            "name":"FreightTrack",
             "business":true,
             "logo":require("./image/projects/jmEagle.png"),
             "about":"Full-stack web and mobile platform for JMEagle that streamlines delivery management and provides real-time driver tracking.",
