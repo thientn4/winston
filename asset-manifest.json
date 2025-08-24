@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.f855e6bc.css",
+    "main.css": "./static/css/main.75b37e2b.css",
     "main.js": "./static/js/main.318a3a72.js",
     "static/js/453.a0b5ac1a.chunk.js": "./static/js/453.a0b5ac1a.chunk.js",
     "static/media/microsoftSQL.png": "./static/media/microsoftSQL.071fe96c4a09064d954b.png",
@@ -20,12 +20,12 @@
     "static/media/node.webp": "./static/media/node.59cce71978aea2fa5192.webp",
     "static/media/ibmDB2.webp": "./static/media/ibmDB2.f918f90e7709a892e54c.webp",
     "index.html": "./index.html",
-    "main.f855e6bc.css.map": "./static/css/main.f855e6bc.css.map",
+    "main.75b37e2b.css.map": "./static/css/main.75b37e2b.css.map",
     "main.318a3a72.js.map": "./static/js/main.318a3a72.js.map",
     "453.a0b5ac1a.chunk.js.map": "./static/js/453.a0b5ac1a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
+    "static/css/main.75b37e2b.css",
     "static/js/main.318a3a72.js"
   ]
 }
