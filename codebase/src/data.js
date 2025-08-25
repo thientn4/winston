@@ -74,7 +74,7 @@ const data={
             "business":true,
             "logo":require("./image/projects/jmEagle.png"),
             "about":"Full-stack web and mobile platform for JMEagle that streamlines delivery management and provides real-time driver tracking.",
-            "link":"https://docs.google.com/document/d/1l5KPTR-ybhaS_aAdGirfmXZ-kV4M1rJSL-TwLJ62dTA/edit"
+            "link":"https://drive.google.com/file/d/1HQfJqpzWZB6VUACsFg1cmjx2L0x52fTs/view?usp=sharing"
         },
         {
             "name":"Breadwinner",
