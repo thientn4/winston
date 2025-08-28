@@ -88,14 +88,14 @@ const data={
             "business":false,
             "logo":require("./image/projects/iMock.png"),
             "about":"Web app to give job seekers a competitive edge with AI mock interviews, delivering instant feedback from Google Gemini AI",
-            "link":"https://www.youtube.com/watch?v=79piTHfBSns"
+            "link":"https://github.com/thientn4/iMock"
         },
         {
             "name":"unBlock",
             "business":false,
             "logo":require("./image/projects/unBlock.png"),
             "about":"Web app for teachers to create engaging virtual classrooms where students can ask, discuss and answer questions",
-            "link":"https://docs.google.com/document/d/1pcJwgOwITQdarScoO7_UDVZ387enB9Rl_2EPkLzMeI0/edit?tab=t.0"
+            "link":"https://github.com/thientn4/unBlock"
         },
         {
             "name":"MeetLink",
