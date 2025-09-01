@@ -186,7 +186,7 @@ function App() {
         </div>
       </div>
       <div style={{...styles.navBar,bottom:0}}>
-        {windowWidth>=700 && <img  alt='Winston' style={{...styles.button, borderRadius:0}} src={require("./image/logo.png")}/>}
+        {windowWidth>=700 && <img  alt='Winston' style={{...styles.button, borderRadius:0}} src={require("./image/logo.png")} onClick={()=>window.scrollTo({behavior: 'smooth', top: 0})}/>}
         {windowWidth>=700 && <div style={{flex:1}}/>}
         <img alt="about" style={{...styles.button,opacity:(skillsVisible || projectsVisible)?0.5:1}} src={require("./image/buttons/about.png")} onClick={()=>window.scrollTo({behavior: 'smooth', top: 0})}/>
         <img alt="skills" style={{...styles.button,opacity:(skillsVisible)?1:0.5}} src={require("./image/buttons/skills.png")} onClick={()=>document.getElementById('my_skills').scrollIntoView({behavior: 'smooth', block: 'start'})}/>
