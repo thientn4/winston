@@ -193,7 +193,7 @@ function App() {
         <img alt="projects" style={{...styles.button,opacity:(aboutVisible || skillsVisible)?0.5:1}} src={require("./image/buttons/projects.png")} onClick={()=>document.getElementById('my_projects').scrollIntoView({behavior: 'smooth', block: 'start'})}/>
       </div>
       {windowWidth<700 && <div style={{...styles.navBar,border:'none',top:0}}>
-        <img alt="Winston" style={{...styles.button, borderRadius:0}} src={require("./image/logo.png")}/>
+        <img alt="Winston" style={{...styles.button, borderRadius:0}} src={require("./image/logo.png")} onClick={()=>window.scrollTo({behavior: 'smooth', top: 0})}/>
       </div>}
     </div>
   );
