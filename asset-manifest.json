@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "./static/css/main.75b37e2b.css",
-    "main.js": "./static/js/main.0e716840.js",
+    "main.js": "./static/js/main.1cc4cda7.js",
     "static/js/453.a0b5ac1a.chunk.js": "./static/js/453.a0b5ac1a.chunk.js",
     "static/media/meetLink.png": "./static/media/meetLink.ad5f475a3132fec0362e.png",
-    "static/media/microsoftSQL.png": "./static/media/microsoftSQL.071fe96c4a09064d954b.png",
+    "static/media/microsoftSQL.png": "./static/media/microsoftSQL.cfa8d6408a25d1c73fd5.png",
     "static/media/intro.jpg": "./static/media/intro.16f57c4e8d0043687d27.jpg",
     "static/media/breadwinner.png": "./static/media/breadwinner.21d3e61fc74ca574607b.png",
     "static/media/about.png": "./static/media/about.28e64809a743d7ab0c82.png",
     "static/media/jmEagle.png": "./static/media/jmEagle.a07d160b8e8ed0e4b4d7.png",
     "static/media/postgreSQL.png": "./static/media/postgreSQL.b1a4d85eadf82a7fb119.png",
+    "static/media/postman.png": "./static/media/postman.167728b479ac29fae52a.png",
     "static/media/asp.png": "./static/media/asp.3f16c30f9e8eb37e9319.png",
     "static/media/project.png": "./static/media/project.111b81388185995279df.png",
     "static/media/aws.png": "./static/media/aws.4ddcba0281cd81c4f40a.png",
@@ -22,11 +23,11 @@
     "static/media/ibmDB2.webp": "./static/media/ibmDB2.f918f90e7709a892e54c.webp",
     "index.html": "./index.html",
     "main.75b37e2b.css.map": "./static/css/main.75b37e2b.css.map",
-    "main.0e716840.js.map": "./static/js/main.0e716840.js.map",
+    "main.1cc4cda7.js.map": "./static/js/main.1cc4cda7.js.map",
     "453.a0b5ac1a.chunk.js.map": "./static/js/453.a0b5ac1a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.75b37e2b.css",
-    "static/js/main.0e716840.js"
+    "static/js/main.1cc4cda7.js"
   ]
 }
