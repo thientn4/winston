@@ -41,6 +41,11 @@ const data={
             "logo":require("./image/skills/react.png")
         },
         {
+            "name":"Expo",
+            "type":2,
+            "logo":require("./image/skills/expo.png")
+        },
+        {
             "name":"Github",
             "type":3,
             "logo":require("./image/skills/github.png")
@@ -49,11 +54,6 @@ const data={
             "name":"AWS",
             "type":3,
             "logo":require("./image/skills/aws.png")
-        },
-        {
-            "name":"Expo",
-            "type":3,
-            "logo":require("./image/skills/expo.png")
         },
         {
             "name":"Postman",

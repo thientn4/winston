@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.75b37e2b.css",
-    "main.js": "./static/js/main.1cc4cda7.js",
+    "main.js": "./static/js/main.b1dc98fd.js",
     "static/js/453.a0b5ac1a.chunk.js": "./static/js/453.a0b5ac1a.chunk.js",
     "static/media/meetLink.png": "./static/media/meetLink.ad5f475a3132fec0362e.png",
     "static/media/microsoftSQL.png": "./static/media/microsoftSQL.cfa8d6408a25d1c73fd5.png",
@@ -23,11 +23,11 @@
     "static/media/ibmDB2.webp": "./static/media/ibmDB2.f918f90e7709a892e54c.webp",
     "index.html": "./index.html",
     "main.75b37e2b.css.map": "./static/css/main.75b37e2b.css.map",
-    "main.1cc4cda7.js.map": "./static/js/main.1cc4cda7.js.map",
+    "main.b1dc98fd.js.map": "./static/js/main.b1dc98fd.js.map",
     "453.a0b5ac1a.chunk.js.map": "./static/js/453.a0b5ac1a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.75b37e2b.css",
-    "static/js/main.1cc4cda7.js"
+    "static/js/main.b1dc98fd.js"
   ]
 }
