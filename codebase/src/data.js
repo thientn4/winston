@@ -77,6 +77,13 @@ const data={
             "link":"https://drive.google.com/file/d/1HQfJqpzWZB6VUACsFg1cmjx2L0x52fTs/view?usp=sharing"
         },
         {
+            "name":"DocDock",
+            "business":false,
+            "logo":require("./image/projects/docDock.png"),
+            "about":"Window Desktop app to AI-transform messy unstructured documents into CSV, JSON format with Gemini and OpenAI",
+            "link":"https://apps.microsoft.com/detail/9ntkqqxxv6mm?hl=en-US&gl=TT"
+        },
+        {
             "name":"Breadwinner",
             "business":false,
             "logo":require("./image/projects/breadwinner.png"),
