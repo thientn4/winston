@@ -73,7 +73,7 @@ function App() {
             <div style={{flex:1}}/>
             <div ref={skillsRef}>
               <div style={{fontSize:'0.2in', fontWeight:'bold'}}>
-                <span className='blueHighlight'>Full Stack</span>? What do I <span className='yellowHighlight'>use</span>?
+                <span className='blueHighlight'>Full Stack</span>? What have I <span className='yellowHighlight'>used</span>?
               </div>
               {windowWidth>=700 && <div className='skillBar'>
                 <div style={{color:skillType===0?'black':'grey', textDecoration:skillType===0?'underline':'none', userSelect:'none'}} onClick={()=>{setSkillType(0)}}>Data</div>
