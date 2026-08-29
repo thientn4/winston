@@ -82,7 +82,10 @@ function App() {
                 <div style={{color:skillType===3?'black':'grey', textDecoration:skillType===3?'underline':'none', userSelect:'none'}} onClick={()=>{setSkillType(3)}}>Tool</div>
                 <div style={{color:skillType===4?'black':'grey', textDecoration:skillType===4?'underline':'none', userSelect:'none'}} onClick={()=>{setSkillType(4)}}>Business</div>
               </div>}
-              {windowWidth<700 && <select className='skillBar' style={{border:'solid 0.01in grey',color:'grey',textAlign:'center',outline: 'none',fontSize:15,backgroundColor:'white',padding:'0.05in',borderRadius:'0.1in'}} value={skillType} onChange={(e)=>{setSkillType(parseInt(e.target.value))}}>
+              {windowWidth<700 && <select className='skillBar' style={{
+                border:'solid 0.01in grey',color:'grey',outline: 'none',fontSize:15,backgroundColor:'white',padding:'0.05in',borderRadius:'0.1in',
+                textAlign:'center',textAlignLast:'center'
+              }} value={skillType} onChange={(e)=>{setSkillType(parseInt(e.target.value))}}>
                 <option value={0}>Data</option>
                 <option value={1}>Backend</option>
                 <option value={2}>Frontend</option>
