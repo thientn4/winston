@@ -55,7 +55,7 @@ function App() {
         <div id="about_me" className='section'>
           <div style={{flex:1}}/>
           <div ref={aboutRef}>
-            <img alt="about me" style={{width:'100%',maxWidth:'3.5in',marginTop:'0.5in'}} src={require("./image/intro.png")}/>
+            <img alt="about me" style={{width:'75%',maxWidth:'3.5in',marginTop:'0.5in'}} src={require("./image/intro.png")}/>
             <div style={{marginTop:'0.2in',fontSize:'0.2in',maxWidth:'4.2in'}}>
               <span className='blueHighlight'>Full Stack Software Engineer</span> with {getYOE()} years of experience transforming <span className='yellowHighlight'>business needs</span> into powerful, user-centric <span className='yellowHighlight'>software solutions</span>
             </div>
