@@ -36,3 +36,133 @@
     transform: rotate(360deg);
   }
 }
+
+.screen {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-right: solid 0.01in #e6dcdcff;
+  border-top: none;
+  position: fixed;
+  left: 0;
+  height: 100svh;
+  width: fit-content;
+  background-color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  overflow-x: auto;
+  padding-left: 0.55in;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.button {
+  width: 0.35in;
+  height: 0.35in;
+  margin: 0.04in;
+  border-radius: 100%;
+  border:transparent 0.04in solid;
+}
+
+.button:hover {
+  border:#FFEC84 0.04in solid;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 7in;
+  padding: 0.1in;
+  min-height: 100svh;
+}
+
+.yellowHighlight {
+  font-weight: bold;
+  background: linear-gradient(to top, #FFEC84 50%, transparent 50%);
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.blueHighlight {
+  font-weight: bold;
+  background: linear-gradient(to top, #cbe6ef 50%, transparent 50%);
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.skillBar {
+  width: 100%;
+  margin-top: 0.4in;
+  padding-bottom: 0.1in;
+  display: flex;
+  flex-direction: row;
+  color: grey;
+  justify-content: space-around;
+  border-bottom: solid 0.01in grey;
+}
+
+.skillBar > div:hover{
+  text-decoration: underline !important;
+}
+
+.skill:hover{
+  text-decoration: underline;
+}
+
+.project{
+  margin:0.1in;
+  padding:0.15in;
+  max-width:2in; 
+  border:solid 0.01in grey;
+  border-radius:0.1in;
+  align-items:center;
+  display:flex;
+  flex-direction:column
+}
+
+.project>u{
+  text-decoration: none;
+}
+
+.project>u:hover{
+  text-decoration: underline;
+}
+
+/* --- Responsive Adjustments (Width < 700px) --- */
+@media (max-width: 700px) {
+  .screen {
+    flex-direction: column-reverse;
+  }
+
+  .navBar {
+    flex-direction: row;
+    border-right: none;
+    border-top: solid 0.01in #e6dcdcff;
+    height: fit-content;
+    width: 100svw;
+  }
+
+  .content {
+    padding-left: 0;
+    padding-top: 0.55in;
+    padding-bottom: 0.55in;
+  }
+
+  .section {
+    min-height: calc(100svh - 1.1in);
+  }
+}
