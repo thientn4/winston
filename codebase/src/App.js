@@ -158,8 +158,8 @@ function App() {
                 <option value={4}>Business</option>
               </select>}
               <div style={{display:'flex',flexDirection:'row',flexWrap:'wrap',justifyContent:'space-evenly'}}>
-                {data.skills.map((skill,index)=><div style={{margin:'0.15in',opacity:skill.type.has(skillType)?1:0.25,backgroundColor:'transparent'}}  onClick={()=>{setSkillType(Math.max(...skill.type))}}>
-                  <img alt="skill" style={{height:'0.5in',margin:'0.1in',filter:skill.type.has(skillType)?'grayscale(0%)':'grayscale(100%)',borderRadius:'0.1in'}} src={skill.logo}/>
+                {data.skills.map((skill,index)=><div style={{margin:'0.15in',opacity:skill.type.includes(skillType)?1:0.25,backgroundColor:'transparent'}}  onClick={()=>{setSkillType(skill.type[0])}}>
+                  <img alt="skill" style={{height:'0.5in',margin:'0.1in',filter:skill.type.includes(skillType)?'grayscale(0%)':'grayscale(100%)',borderRadius:'0.1in'}} src={skill.logo}/>
                   <div style={{whiteSpace:'pre-wrap',userSelect:'none'}}>{skill.name}</div>
                 </div>)}
               </div>

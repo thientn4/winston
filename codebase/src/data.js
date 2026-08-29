@@ -2,82 +2,82 @@ const data={
     skills:[
         {
             "name":"Microsoft\nSQL",
-            "type":new Set([0]),
+            "type":[0],
             "logo":require("./image/skills/microsoftSQL.png")
         },
         {
             "name":"MySQL",
-            "type":new Set([0]),
+            "type":[0],
             "logo":require("./image/skills/mySQL.jpg")
         },
         {
             "name":"PostgreSQL",
-            "type":new Set([0]),
+            "type":[0],
             "logo":require("./image/skills/postgreSQL.png")
         },
         {
             "name":"SQLite",
-            "type":new Set([0]),
+            "type":[0],
             "logo":require("./image/skills/sqlite.webp")
         },
         {
             "name":"IBM-DB2",
-            "type":new Set([0]),
+            "type":[0],
             "logo":require("./image/skills/ibmDB2.webp")
         },
         {
             "name":"Python",
-            "type":new Set([0,1]),
+            "type":[1,0],
             "logo":require("./image/skills/python.png")
         },
         {
             "name":"ASP.NET\n(C#)",
-            "type":new Set([1]),
+            "type":[1],
             "logo":require("./image/skills/asp.png")
         },
         {
             "name":"NodeJS\n(Javascript)",
-            "type":new Set([1]),
+            "type":[1],
             "logo":require("./image/skills/node.webp")
         },
         {
             "name":"Electron\n(Desktop)",
-            "type":new Set([2]),
+            "type":[2],
             "logo":require("./image/skills/electron.png")
         },
         {
             "name":"React\n(JS-Native)",
-            "type":new Set([2]),
+            "type":[2],
             "logo":require("./image/skills/react.png")
         },
         {
             "name":"Expo",
-            "type":new Set([2]),
+            "type":[2],
             "logo":require("./image/skills/expo.png")
         },
         {
             "name":"Github",
-            "type":new Set([3]),
+            "type":[3],
             "logo":require("./image/skills/github.png")
         },
         {
             "name":"Postman",
-            "type":new Set([3]),
+            "type":[3],
             "logo":require("./image/skills/postman.png")
         },
         {
             "name":"AWS",
-            "type":new Set([3,4]),
+            "type":[3,4],
             "logo":require("./image/skills/aws.png")
         },
         {
             "name":"SPS-EDI",
-            "type":new Set([4]),
+            "type":[4],
             "logo":require("./image/skills/sps.png")
         },
         {
             "name":"NetSuite",
-            "type":new Set([4]),
+            "type":[4],
             "logo":require("./image/skills/netsuite.png")
         }
     ],
