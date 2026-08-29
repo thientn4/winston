@@ -148,16 +148,18 @@ function App() {
                 <div style={{color:skillType===1?'black':'grey', textDecoration:skillType===1?'underline':'none', userSelect:'none'}} onClick={()=>{setSkillType(1)}}>Backend</div>
                 <div style={{color:skillType===2?'black':'grey', textDecoration:skillType===2?'underline':'none', userSelect:'none'}} onClick={()=>{setSkillType(2)}}>Frontend</div>
                 <div style={{color:skillType===3?'black':'grey', textDecoration:skillType===3?'underline':'none', userSelect:'none'}} onClick={()=>{setSkillType(3)}}>Tool</div>
+                <div style={{color:skillType===4?'black':'grey', textDecoration:skillType===4?'underline':'none', userSelect:'none'}} onClick={()=>{setSkillType(4)}}>Business</div>
               </div>}
               {windowWidth<700 && <select style={{...styles.skillBar,border:'solid 0.01in grey',color:'grey',textAlign:'center',outline: 'none',fontSize:15,backgroundColor:'white',padding:'0.05in',borderRadius:'0.1in'}} value={skillType} onChange={(e)=>{setSkillType(parseInt(e.target.value))}}>
                 <option value={0}>Data</option>
                 <option value={1}>Backend</option>
                 <option value={2}>Frontend</option>
                 <option value={3}>Tool</option>
+                <option value={4}>Business</option>
               </select>}
               <div style={{display:'flex',flexDirection:'row',flexWrap:'wrap',justifyContent:'space-evenly'}}>
-                {data.skills.map((skill,index)=><div style={{margin:'0.15in',flex:1,opacity:skillType===skill.type?1:0.25,backgroundColor:'transparent'}}  onClick={()=>{setSkillType(skill.type)}}>
-                  <img alt="skill" style={{height:'0.5in',margin:'0.1in',filter:skillType===skill.type?'grayscale(0%)':'grayscale(100%)',borderRadius:'0.1in'}} src={skill.logo}/>
+                {data.skills.map((skill,index)=><div style={{margin:'0.15in',opacity:skill.type.has(skillType)?1:0.25,backgroundColor:'transparent'}}  onClick={()=>{setSkillType(Math.max(...skill.type))}}>
+                  <img alt="skill" style={{height:'0.5in',margin:'0.1in',filter:skill.type.has(skillType)?'grayscale(0%)':'grayscale(100%)',borderRadius:'0.1in'}} src={skill.logo}/>
                   <div style={{whiteSpace:'pre-wrap',userSelect:'none'}}>{skill.name}</div>
                 </div>)}
               </div>

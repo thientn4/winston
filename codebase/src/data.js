@@ -2,63 +2,83 @@ const data={
     skills:[
         {
             "name":"Microsoft\nSQL",
-            "type":0,
+            "type":new Set([0]),
             "logo":require("./image/skills/microsoftSQL.png")
         },
         {
             "name":"MySQL",
-            "type":0,
+            "type":new Set([0]),
             "logo":require("./image/skills/mySQL.jpg")
         },
         {
             "name":"PostgreSQL",
-            "type":0,
+            "type":new Set([0]),
             "logo":require("./image/skills/postgreSQL.png")
         },
         {
+            "name":"SQLite",
+            "type":new Set([0]),
+            "logo":require("./image/skills/sqlite.webp")
+        },
+        {
             "name":"IBM-DB2",
-            "type":0,
+            "type":new Set([0]),
             "logo":require("./image/skills/ibmDB2.webp")
         },
         {
-            "name":"ASP.NET\n(C#)",
-            "type":1,
-            "logo":require("./image/skills/asp.png")
-        },
-        {
             "name":"Python",
-            "type":1,
+            "type":new Set([0,1]),
             "logo":require("./image/skills/python.png")
         },
         {
+            "name":"ASP.NET\n(C#)",
+            "type":new Set([1]),
+            "logo":require("./image/skills/asp.png")
+        },
+        {
             "name":"NodeJS\n(Javascript)",
-            "type":1,
+            "type":new Set([1]),
             "logo":require("./image/skills/node.webp")
         },
         {
+            "name":"Electron\n(Desktop)",
+            "type":new Set([2]),
+            "logo":require("./image/skills/electron.png")
+        },
+        {
             "name":"React\n(JS-Native)",
-            "type":2,
+            "type":new Set([2]),
             "logo":require("./image/skills/react.png")
         },
         {
             "name":"Expo",
-            "type":2,
+            "type":new Set([2]),
             "logo":require("./image/skills/expo.png")
         },
         {
             "name":"Github",
-            "type":3,
+            "type":new Set([3]),
             "logo":require("./image/skills/github.png")
         },
         {
+            "name":"Postman",
+            "type":new Set([3]),
+            "logo":require("./image/skills/postman.png")
+        },
+        {
             "name":"AWS",
-            "type":3,
+            "type":new Set([3,4]),
             "logo":require("./image/skills/aws.png")
         },
         {
-            "name":"Postman",
-            "type":3,
-            "logo":require("./image/skills/postman.png")
+            "name":"SPS-EDI",
+            "type":new Set([4]),
+            "logo":require("./image/skills/sps.png")
+        },
+        {
+            "name":"NetSuite",
+            "type":new Set([4]),
+            "logo":require("./image/skills/netsuite.png")
         }
     ],
     projects:[
