@@ -68,7 +68,7 @@ function App() {
           </div>
           <div style={{flex:1}}/>
         </div>
-        <div style={{backgroundColor:'#faf7f7ff',width:'100%',display:'flex',justifyContent:'center',padding:windowWidth<700?'0.3in':0,paddingLeft:0,paddingRight:0}} id="my_skills">
+        <div style={{backgroundColor:'#faf7f7ff',width:'100%',display:'flex',justifyContent:'center',padding:windowWidth<700?'0.3in':0,paddingLeft:0,paddingRight:0,borderTop:'dashed 0.02in #e6dcdcff',borderBottom:'dashed 0.02in #e6dcdcff'}} id="my_skills">
           <div className='section'>
             <div style={{flex:1}}/>
             <div ref={skillsRef}>
@@ -118,7 +118,7 @@ function App() {
                 <div className={project.business?'yellowHighlight':'blueHighlight'} style={{marginBottom:'0.1in'}}>{project.name}</div>
                 <div>{project.about}</div>
                 <div style={{flex:1}}/>
-                <u style={{color:'grey',userSelect:'none',marginTop:'0.1in'}} onClick={()=>{
+                <u style={{color:'#2597F8',userSelect:'none',marginTop:'0.1in'}} onClick={()=>{
                   if(project.link) 
                     window.open(project.link, '_blank') 
                   else 
